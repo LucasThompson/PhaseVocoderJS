@@ -1,4 +1,11 @@
-function PhaseVocoder(winSize, sampleRate) {
+(function (root, factory) {
+	if (typeof module === 'object' && module.exports) {
+			module.exports = factory(require('dsp.js').FFT, require('CBuffer'));
+	} else {
+			root.PhaseVocoder = factory(root.FFT, root.CBuffer);
+	}
+}(this, function (FFT, CBuffer) {
+	return function PhaseVocoder(winSize, sampleRate) {
 
 	var _sampleRate = sampleRate; var _Hs = 0; var _Ha = 0; var _omega;
 
@@ -345,3 +352,4 @@ function PhaseVocoder(winSize, sampleRate) {
 		this.set_alpha(_lastInputAlpha);
 	}
 }
+}));
