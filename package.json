@@ -1,0 +1,26 @@
+{
+  "name": "phase-vocoder.js",
+  "version": "0.1.0",
+  "description": "A JavaScript implementation of the Phase Vocoder algorithm, with Identity Phase Locking, to perform time stretching.",
+  "main": "PV_fast_5.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasThompson/PhaseVocoderJS.git"
+  },
+  "author": "Bruno Dias",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/LucasThompson/PhaseVocoderJS/issues"
+  },
+  "homepage": "https://github.com/LucasThompson/PhaseVocoderJS#readme",
+  "dependencies": {
+    "CBuffer": "^2.0.0",
+    "dsp.js": "github:corbanbrook/dsp.js"
+  }
+}
